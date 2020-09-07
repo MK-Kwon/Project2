@@ -4,6 +4,9 @@
   "description": "Project2",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "lint": "eslint . --quiet",
     "test": "npm run lint"
   },
   "repository": {
