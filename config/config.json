@@ -1,17 +1,23 @@
 {
   "development": {
-    "dialect": "mysql",
-    "use_env_variable":"LOCALDB_URL"
+    "username": "root",
+    "password": "",
+    "database": "database_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
+    "password": "",
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
-    "dialect": "mysql",
-    "use_env_variable":"LOCALDB_URL"
+    "username": "root",
+    "password": "",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
   }
 }
