@@ -28,7 +28,7 @@ $(document).ready(() => {
       email,
       password,
     })
-      .then((data) => {
+      .then(() => {
         window.location.replace("/members");
         // If there's an error, handle it by throwing up a bootstrap alert
       })
