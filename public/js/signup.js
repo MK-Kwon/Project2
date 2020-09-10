@@ -39,4 +39,13 @@ $(document).ready(() => {
     $("#alert .msg").text(err.responseJSON);
     $("#alert").fadeIn(500);
   }
+
+  // function that toggles background image of application
+  function toggleBackgroundImage() {
+    $(".slider").click(function () {
+      let imageURL = "../img/david-von-diemar-0QldV2TPvLg-unsplash-photoshoped.jpg";
+      $(".backgroundImg").css("background-image", "url(" + imageURL + ")");
+    });
+  }
+  toggleBackgroundImage();
 });
