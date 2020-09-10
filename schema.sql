@@ -1,0 +1,4 @@
+DROP DATABASE IF EXISTS roadstardb;
+
+CREATE DATABASE roadstardb;
+
