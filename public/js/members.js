@@ -4,4 +4,7 @@ $(document).ready(() => {
   $.get("/api/user_data").then((data) => {
     $(".member-name").text(data.email);
   });
+  $(".slider").click(function () {
+    $(".uk-animation-reverse").toggleClass("active");
+  });
 });

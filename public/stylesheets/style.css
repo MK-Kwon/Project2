@@ -12,11 +12,19 @@ html {
 body {
   min-height: 100vh;
   margin: 0;
-  background-color: black;
+  background-image: url("../img/hex-dark.png");
 }
 
 .uk-light {
   margin-top: 12%;
+}
+
+.uk-animation-reverse {
+  background-image: url("../img/daniel-thurler-YRGsG4oiNIg-unsplash-photoshopped.jpg");
+}
+
+.uk-animation-reverse.active{
+  background-image: url("../img/daniel-thurler-YRGsG4oiNIg-unsplash-photoshopped.jpg");
 }
 
 /* ========================================== Toggle CSS ======================================================== */
@@ -81,12 +89,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-.backgroundImg {
-  max-width: 100%;
-  max-height: 100%;
-  float: left;
 }
 
 /* ==================================================================================================================== */
