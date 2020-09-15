@@ -7,14 +7,16 @@
     <link rel="icon" href="./img/noun_Flying Pig.png">
     <!-- CSS FILES -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
+    <link href="stylesheets/style.css" rel="stylesheet">
+    
 </head>
 
 <body
     class="login uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-overflow-hidden uk-light"
     data-uk-height-viewport="" data-gr-c-s-loaded="true" cz-shortcut-listen="true" style="min-height: calc(100vh);">
     <!-- overlay -->
-    <div class="uk-position-cover uk-overlay-primary"
-        style="background-image: url(&quot;./img/daniel-thurler-YRGsG4oiNIg-unsplash-photoshopped.jpg&quot;); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="uk-position-cover uk-overlay-primary uk-animation-kenburns"
+        style="background-image: url(&quot;./img/angus-gray-KfXHCi4_us0-unsplash.jpg&quot;); background-repeat: no-repeat; background-size: cover; background-position: center;">
     </div>
     <!-- /overlay -->
     <div class="uk-position-bottom-center uk-position-small uk-visible@m uk-position-z-index">
@@ -28,15 +30,15 @@
                         <polygon points="9.8,4.2 6.7,2.4 9.8,0.4 12.9,2.3"></polygon>
                     </svg></span></a></span>
     </div>
-    <div class="uk-width-medium uk-padding-small uk-position-z-index uk-scrollspy-inview uk-animation-fade"
-        uk-scrollspy="cls: uk-animation-fade">
+    <div class="custom uk-width-medium uk-padding-small uk-position-z-index uk-scrollspy-inview uk-animation-fade"
+    style="background-color: rgb(105,23,27,0.8); padding: 20px;" uk-scrollspy="cls: uk-animation-fade">
 
-        <div class="uk-text-center uk-margin">
-            <img src="./img/roadstar logo copy.png" alt="Logo">
+        <div class="uk-text-center">
+            <img src="./img/roadstar logo-red.png" alt="Logo">
         </div>
 
         <!-- login -->
-        <form class="toggle-class" action="members.html">
+        <form class="login" class="toggle-class" action="members.html">
             <fieldset class="uk-fieldset">
                 <div class="uk-margin-small">
                     <div class="uk-inline uk-width-1-1">
@@ -46,9 +48,8 @@
                                 <path fill="none" stroke="#000" stroke-width="1.1"
                                     d="M1.5,19 C2.3,14.5 5.8,11.2 10,11.2 C14.2,11.2 17.7,14.6 18.5,19.2"></path>
                             </svg></span>
-                        <input class="uk-input uk-border-pill" required="" placeholder="Username" type="text"
-                            autocomplete="off"
-                            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                        <input id="email-input" class="uk-input uk-border-pill" required="" placeholder="E-mail" type="text"
+                            autocomplete="off">
                     </div>
                 </div>
                 <div class="uk-margin-small">
@@ -60,9 +61,8 @@
                                     d="M6.5,8 L6.5,4.88 C6.5,3.01 8.07,1.5 10,1.5 C11.93,1.5 13.5,3.01 13.5,4.88 L13.5,8">
                                 </path>
                             </svg></span>
-                        <input class="uk-input uk-border-pill" required="" placeholder="Password" type="password"
-                            autocomplete="off"
-                            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                        <input id="password-input" class="uk-input uk-border-pill" required="" placeholder="Password" type="password"
+                            autocomplete="off">
                     </div>
                 </div>
                 <div class="uk-margin-small">
@@ -72,8 +72,11 @@
                     <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">LOG
                         IN</button>
                 </div>
-                <!-- Log in with Google instead. -->
-                <div class="g-signin2" data-onsuccess="onSignedIn" data-theme="dark">Sign In</div>
+                <!-- Sign Up Page -->
+                <div class="uk-margin-bottom">
+                    <a class="uk-button uk-botton-secondary uk-border-pill uk-width-1-1" href="signup.html"
+                        style="text-decoration: none; background-color: rgb(238, 238, 238); color: rgb(80, 79, 79);">SIGN
+                        UP</a></div>
             </fieldset>
         </form>
         <!-- /login -->

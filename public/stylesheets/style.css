@@ -27,6 +27,49 @@ body {
   background-image: url("../img/daniel-thurler-YRGsG4oiNIg-unsplash-photoshopped.jpg");
 }
 
+img {
+  max-width: 120%;
+  height: auto;
+  justify-content: center;
+}
+
+.uk-text-center {
+  max-width: 120%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.custom {
+  width: 280px;
+  max-width: 120%;
+  max-height: auto;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.custom-input  {
+  margin: 0;
+  border: none;
+  overflow: visible;
+  font: inherit;
+  display: inline-box;
+  padding: 0 30px;
+  /*background-color: rgb(34,34,34, 0.7);*/
+  vertical-align: middle;
+  font-size: .875rem;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .1s ease-in-out;
+  transition-property: color, background-color, border-color;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+
 /* ========================================== Toggle CSS ======================================================== */
 /* The switch - the box around the slider */
 .switch {
