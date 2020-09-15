@@ -18,10 +18,14 @@ body {
 
 .uk-animation-reverse {
   background-image: url("../img/daniel-thurler-YRGsG4oiNIg-unsplash-photoshopped.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .uk-animation-reverse.active{
   background-image: url("../img/daniel-thurler-YRGsG4oiNIg-unsplash-photoshopped.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 img {
