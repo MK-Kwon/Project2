@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RoadStar</title>
-    <link rel="icon" href="./img/roadstar logo-red.png">
+    <title>Log-In RoadStar</title>
+    <link rel="icon" href="./img/roadstar-logo-red.png">
     <!-- CSS FILES -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit@latest/dist/css/uikit.min.css">
     <link href="stylesheets/style.css" rel="stylesheet">
@@ -34,7 +34,7 @@
     style="background-color: rgb(105,23,27,0.8); padding: 20px;" uk-scrollspy="cls: uk-animation-fade">
 
         <div class="uk-text-center uk-margin">
-            <img src="./img/roadstar logo-red.png" alt="Logo">
+            <img src="./img/roadstar-logo-red.png" alt="Logo">
         </div>
 
         <!-- login -->
@@ -48,7 +48,7 @@
                                 <path fill="none" stroke="#000" stroke-width="1.1"
                                     d="M1.5,19 C2.3,14.5 5.8,11.2 10,11.2 C14.2,11.2 17.7,14.6 18.5,19.2"></path>
                             </svg></span>
-                        <input id="email-input" class="uk-input uk-border-pill" required="" placeholder="E-mail" type="text"
+                        <input class="uk-input uk-border-pill" class="uk-input uk-border-pill" required="" placeholder="E-mail" type="text"
                             autocomplete="off">
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                                     d="M6.5,8 L6.5,4.88 C6.5,3.01 8.07,1.5 10,1.5 C11.93,1.5 13.5,3.01 13.5,4.88 L13.5,8">
                                 </path>
                             </svg></span>
-                        <input id="password-input" class="uk-input uk-border-pill" required="" placeholder="Password" type="password"
+                            <input class="uk-input uk-border-pill" class="uk-input uk-border-pill" required="" placeholder="Password" type="password"
                             autocomplete="off">
                     </div>
                 </div>
@@ -69,10 +69,12 @@
                     <label><input class="uk-checkbox" type="checkbox"> Keep me logged in</label>
                 </div>
                 <div class="uk-margin-bottom">
-                    <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">LOG
+                    <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1" 
+                    style="text-decoration: none; background-color: rgba(17, 17, 17, 0.8); color: rgb(238, 238, 238);">LOG
                         IN</button>
                 </div>
-                <!-- Sign Up Page -->
+                <!-- Log in with Google instead. -->
+                <!-- <div class="g-signin2" data-onsuccess="onSignedIn" data-theme="dark">Sign In</div> -->
                 <div class="uk-margin-bottom">
                     <a class="uk-button uk-botton-secondary uk-border-pill uk-width-1-1" href="signup.html"
                         style="text-decoration: none; background-color: rgb(238, 238, 238); color: rgb(80, 79, 79);">SIGN
