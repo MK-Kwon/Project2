@@ -28,7 +28,12 @@ body {
   background-position: center;
 }
 
-.uk-card-primary.uk-card-body .uk-marker, .uk-card-primary>:not([class*=uk-card-media]) .uk-marker, .uk-card-secondary.uk-card-body .uk-marker, .uk-card-secondary>:not([class*=uk-card-media]) .uk-marker, .uk-light .uk-marker, .uk-offcanvas-bar .uk-marker, .uk-overlay-primary .uk-marker, .uk-section-primary:not(.uk-preserve-color) .uk-marker, .uk-section-secondary:not(.uk-preserve-color) .uk-marker, .uk-tile-primary:not(.uk-preserve-color) .uk-marker, .uk-tile-secondary:not(.uk-preserve-color) .uk-marker{
+.uk-card-primary.uk-card-body .uk-marker, .uk-card-primary>:not([class*=uk-card-media]) 
+.uk-marker, .uk-card-secondary.uk-card-body .uk-marker, .uk-card-secondary>:not([class*=uk-card-media]) 
+.uk-marker, .uk-light .uk-marker, .uk-offcanvas-bar .uk-marker, .uk-overlay-primary .uk-marker, 
+.uk-section-primary:not(.uk-preserve-color) .uk-marker, .uk-section-secondary:not(.uk-preserve-color) 
+.uk-marker, .uk-tile-primary:not(.uk-preserve-color) .uk-marker, .uk-tile-secondary:not(.uk-preserve-color) 
+.uk-marker{
   background-color: red;
   color: white;
 }
