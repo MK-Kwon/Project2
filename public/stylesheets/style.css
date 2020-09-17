@@ -9,6 +9,10 @@ html {
   margin: 0;
 }
 
+h1 {
+  font-family: 'Raleway';
+}
+
 body {
   min-height: 100vh;
   margin: 0;
