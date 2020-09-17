@@ -24,11 +24,12 @@
           <!-- For these markers, we use modals that contain the information the user is looking for. https://getuikit.com/docs/visibility -->
           <!-- Each marker will display information about its contents upon hover. class="uk-button uk-button-default" uk-tooltip="title: Hello World; pos: bottom-right"-->
           <a class="uk-position-absolute uk-transform-center" style="left: 25%; top: 30%"
-            uk-toggle="target: #modal-left" uk-marker uk-tooltip="title: Save Favorite Car/Motorbikes Here; pos: top-left"></a>
+            uk-toggle="target: #modal-left" uk-marker
+            uk-tooltip="title: Save Favorite Car/Motorbikes Here; pos: top-left"></a>
           <a class="uk-position-absolute uk-transform-center" style="left: 59%; top: 38%"
             uk-toggle="target: #modal-center" uk-marker uk-tooltip="title: Car & Motorbike Events!; pos: top"></a>
           <a class="uk-position-absolute uk-transform-center" style="left: 83%; top: 70%"
-            uk-toggle="target: #modal-right" uk-marker uk-tooltip="title: Find Parts; pos: top-left"></a>
+            uk-toggle="target: #modal-right" uk-marker uk-tooltip="title: Find Vehicle by VIN; pos: top-left"></a>
           <!-- Toggles between car and motorcycle. -->
           <div id="toggleImg">
             <!-- Rounded switch -->
@@ -93,43 +94,36 @@
           </div>
           <button id="eventBriteBtn" class="uk-button uk-button-default demo" type="button"
             onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Added event to list!'})">Submit</button>
-          <div id="eventBriteDiv">
-            <div id="eventBriteFrame"></div>
-          </div>
         </div>
-        <!-- Find car parts here -->
-        <div id="modal-right" class="uk-flex-top" uk-modal>
-          <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-
-            <button class="uk-modal-close-default" type="button" uk-close></button>
-            <div class="uk-modal-header">
-              <h2 class="uk-modal-title">Find and log car parts</h2>
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-              id
-              est laborum.</p>
-            <button class="uk-button uk-button-default demo" type="button"
-              onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Added parts to list!'})">Submit</button>
-          </div>
-        </div>
-        <!-- ================================================================================================================================ -->
       </div>
-    </div>
+      <!-- Find vehicles here -->
+      <div id="modal-right" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
 
-    <!--JQuery JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--Google Sign-in-->
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <!-- UIkit JS -->
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.1/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.1/dist/js/uikit-icons.min.js"></script>
-    <script type="text/javascript" src="js/members.js"></script>
-    <script type="text/javascript" src="js/nhtsa.js"></script>
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+          <div class="uk-modal-header">
+            <h2 class="uk-modal-title">Search for vehicles by their VIN number</h2>
+          </div>
+          <form>
+            <input id="vin-input" class="uk-input" type="text">
+          </form>
+          <button class="uk-button uk-button-default demo vin-search" type="button"
+            onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Searching for vehicle!'})">Submit</button>
+        </div>
+      </div>
+      <!-- ================================================================================================================================ -->
+    </div>
+  </div>
+
+  <!--JQuery JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--Google Sign-in-->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.1/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.1/dist/js/uikit-icons.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+  <script type="text/javascript" src="js/nhtsa.js"></script>
 
 </body>
 

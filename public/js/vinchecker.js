@@ -1,6 +1,6 @@
 // const express = require("express");
 
-const inquirer = require("inquirer");
+/* const inquirer = require("inquirer");
 const axios = require("axios");
 
 let make;
@@ -39,4 +39,6 @@ function vinSearch(data) {
         .catch(error => {
             console.log(error);
         });
-}
+} */
+
+
