@@ -9,6 +9,10 @@ html {
   margin: 0;
 }
 
+h1 {
+  font-family: 'Raleway';
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -85,6 +89,8 @@ img {
 /* The switch - the box around the slider */
 .switch {
   position: relative;
+  margin-top: 20px;
+  margin-right: 20px;
   float: right;
   width: 60px;
   height: 34px;
