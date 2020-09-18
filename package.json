@@ -1,24 +1,8 @@
 {
-  "name": "project2",
+  "name": "roadstar",
   "version": "1.0.0",
-  "description": "Project2",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "lint": "eslint . --quiet",
-    "test": "npm run lint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MK-Kwon/Project2.git"
-  },
-  "author": "Min Kyung Kwon, Thomas Nguyen, Jessica Walker",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MK-Kwon/Project2/issues"
-  },
-  "homepage": "https://github.com/MK-Kwon/Project2#readme",
+  "description": "",
+  "main": ".eslintrc.js",
   "dependencies": {
     "ajax": "0.0.4",
     "axios": "^0.20.0",
@@ -32,8 +16,20 @@
     "sequelize": "^6.3.5"
   },
   "devDependencies": {
-    "eslint": "^7.9.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
-  }
+    "eslint": "^7.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MK-Kwon/Project2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MK-Kwon/Project2/issues"
+  },
+  "homepage": "https://github.com/MK-Kwon/Project2#readme"
 }
