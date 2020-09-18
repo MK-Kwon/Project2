@@ -1,5 +1,3 @@
-// /**
-//  * pulls information from the form and build the query URL
 //  * @returns {string} URL for NYT API based on form inputs
 //  */
 // function buildQueryURL() {
@@ -159,17 +157,17 @@
 //     console.log(res, "You've made a response!");
 // })
 
-const year; //get this from the front end 
+//const year; //get this from the front end 
 // select1 = ({ year });
 
-const make;
+//const make;
 // select2 = ({ make });
 
-const model;
+//const model;
 // select3 = ({ model });
 
 
-$.ajax({
+/* $.ajax({
     url: `https://cors-ut-bootcamp.herokuapp.com/https://one.nhtsa.gov/webapi/api/Recalls/vehicle/modelyear/${year}/make/${make}/model/${model}?format=json`,
     type: "GET",
     dataType: "json",
@@ -180,4 +178,4 @@ $.ajax({
         console.log(xhr.status);
         console.log(thrownError);
     }
-});
+}); */

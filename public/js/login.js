@@ -4,8 +4,6 @@ $(document).ready(() => {
   const emailInput = $("input#email-input");
   const passwordInput = $("input#password-input");
 
-  const googleSignIn = $(".g-sign2");
-
   // When the form is submitted, we validate there's an email and password entered
   loginForm.on("submit", (event) => {
     event.preventDefault();
@@ -15,6 +13,7 @@ $(document).ready(() => {
     };
 
     if (!userData.email || !userData.password) {
+      $("#loginBox").addClass(".uk-animation-shake");
       return;
     }
 
@@ -38,19 +37,5 @@ $(document).ready(() => {
         console.log(err);
       });
   }
-  //========================================================================================================
-  // Google Login; not working right now
-  //========================================================================================================
-  function onSignIn(googleUser) {
-    let profile = googleUser.getBasicProfile();
-    console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
-    console.log("Name: " + profile.getName());
-    console.log("Image URL: " + profile.getImageUrl());
-    console.log("Email: " + profile.getEmail()); // This is null if the "email" scope is not present.
-  }
-
-  googleSignIn.on("click", function (event) {
-    event.preventDefault();
-    onSignIn();
-  });
+ 
 });
