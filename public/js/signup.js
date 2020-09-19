@@ -25,8 +25,8 @@ $(document).ready(() => {
   // Otherwise we log any errors
   function signUpUser(email, password) {
     $.post("/api/signup", {
-      email,
-      password,
+      email: email,
+      password: password
     })
       .then(() => {
         window.location.replace("/members");
