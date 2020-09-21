@@ -1,6 +1,7 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const axios = require("axios");
 
 
 module.exports = function (app) {
@@ -46,5 +47,11 @@ module.exports = function (app) {
         id: req.user.id,
       });
     }
+  });
+
+  app.get("/api/events/cars", function(req, res) {
+    axios.get("https://maps.googleapis.com/maps/api/place/textsearch/json?query=car+events&key=" + process.env.API_KEY).then(function(response) {
+        res.json(response.data.results);
+    });
   });
 };
