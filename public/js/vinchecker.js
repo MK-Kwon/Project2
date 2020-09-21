@@ -1,44 +1,85 @@
-// const express = require("express");
+let car = {};
+let motorcycle = {};
+const favoritesBtn = $(".add-to-favorites");
+const favoritesMarker = $("#favoritesMarker");
+const faveVehiclesEl = $("#listOfFaveVehicles");
 
-/* const inquirer = require("inquirer");
-const axios = require("axios");
+let html;
 
-let make;
-let model;
-let year;
-let plantCountry;
-let series;
+$(".vin-search").click(function () {
+    const data = $("#vin-input").val();
+    console.log(data);
+    vinchecker(data);
+});
 
-inquirer
-    .prompt([
-        {
-            name: "vehicleVin",
-            type: "prompt",
-            message: "Please enter the vehicle's VIN"
+$("#modal-right").click(function() {
+    $("#vehicle-display").empty();
+    $("#vin-input").val("");
+});
+
+favoritesBtn.click(function () {
+    postFavorite();
+});
+
+const vinchecker = function (vin) {
+    const queryUrl = `https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${vin}?format=json`;
+    $.ajax({
+        url: queryUrl,
+        method: "GET"
+    }).then(function (response) {
+
+        console.log(response);
+
+        if (response.Results[13].Value !== "MOTORCYCLE") {
+
+            let carSearch = {
+                category: "Car",
+                make: response.Results[6].Value,
+                model: response.Results[8].Value,
+                year: response.Results[9].Value,
+                plant: response.Results[14].Value,
+                series: response.Results[11].Value
+            };
+            html = `
+                <h3 class="vin-alert" id="vehicle-category">Car</h3>
+                <p class="vehicle-info" id="vehicle-make">${carSearch.make}</p>
+                <p class="vehicle-info" id="vehicle-model">${carSearch.model}</p>
+                <p class="vehicle-info" id="vehicle-year">${carSearch.year}</p>
+                <p class="vehicle-info" id="vehicle-plant">${carSearch.plant}</p>
+                <p class="vehicle-info" id="vehicle-series">${carSearch.series}</p>
+            `;
+            $("#vehicle-display").empty();
+            $("#vehicle-display").append(html);
+
+            console.log(carSearch);
+        } else {
+            console.log("It's a motorbike!");
+            let bikeSearch = {
+
+                category: "Motorbike",
+                make: response.Results[6].Value,
+                model: response.Results[8].Value,
+                year: response.Results[9].Value,
+                plant: response.Results[14].Value,
+                series: response.Results[11].Value
+            };
+            html = `
+            <h3 class="vin-alert" id="vehicle-category">Motorbike</h3>
+            <p class="vehicle-info" id="vehicle-make">${bikeSearch.make}</p>
+            <p class="vehicle-info" id="vehicle-model">${bikeSearch.model}</p>
+            <p class="vehicle-info" id="vehicle-year">${bikeSearch.year}</p>
+            <p class="vehicle-info" id="vehicle-plant">${bikeSearch.plant}</p>
+            <p class="vehicle-info" id="vehicle-series">${bikeSearch.series}</p>
+            `;
+            $("#vehicle-display").empty();
+            $("#vehicle-display").append(html);
+
+            console.log(bikeSearch);
         }
-    ]).then(function(data) {
-        vinSearch(data);
-    });
-
-function vinSearch(data) {
-    axios.get(`https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${data.vehicleVin}?format=json`)
-        .then(function(response) {
-            make = response.data.Results[6].Value;
-            model = response.data.Results[8].Value;
-            year = response.data.Results[9].Value;
-            plantCountry = response.data.Results[14].Value;
-            series = response.data.Results[18].Variable;
-            
-            // console.log(response.data);
-            console.log(make);
-            console.log(model);
-            console.log(year);
-            console.log(plantCountry);
-            console.log(series);
-        })
-        .catch(error => {
-            console.log(error);
+    }).then(function () {
+        favoritesBtn.attr("style", "display: block");
+    })
+        .catch(function (err) {
+            console.log(err);
         });
-} */
-
-
+};
