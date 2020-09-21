@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": null,
+    "password": "Butter951753Fly",
     "database": "roadstardb",
     "host": "127.0.0.1",
     "dialect": "mysql"
