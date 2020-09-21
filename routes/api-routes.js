@@ -50,7 +50,7 @@ module.exports = function (app) {
   });
 
   app.get("/api/events/cars", function(req, res) {
-    axios.get("https://maps.googleapis.com/maps/api/place/textsearch/json?query=car+events+in+Australia&key=" + process.env.API_KEY).then(function(response) {
+    axios.get("https://maps.googleapis.com/maps/api/place/textsearch/json?query=car+shows+Adelaide&key=" + process.env.API_KEY).then(function(response) {
         res.json(response.data.results);
     });
   });
