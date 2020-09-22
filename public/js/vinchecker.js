@@ -18,7 +18,7 @@ $("#modal-right").click(function() {
 });
 
 favoritesBtn.click(function () {
-    postFavorite();
+    postFavorites();
 });
 
 const vinchecker = function (vin) {
@@ -50,8 +50,8 @@ const vinchecker = function (vin) {
             `;
             $("#vehicle-display").empty();
             $("#vehicle-display").append(html);
-
-            console.log(carSearch);
+            car = carSearch;
+            console.log(car);
         } else {
             console.log("It's a motorbike!");
             let bikeSearch = {
@@ -73,8 +73,8 @@ const vinchecker = function (vin) {
             `;
             $("#vehicle-display").empty();
             $("#vehicle-display").append(html);
-
-            console.log(bikeSearch);
+            motorcycle = bikeSearch;
+            console.log(motorcycle);
         }
     }).then(function () {
         favoritesBtn.attr("style", "display: block");
@@ -83,3 +83,84 @@ const vinchecker = function (vin) {
             console.log(err);
         });
 };
+
+function postFavorites() {
+    const fav = {
+        category: $("#vehicle-category").text(),
+        make: $("#vehicle-make").text(),
+        model: $("#vehicle-model").text(),
+        year: $("#vehicle-year").text(),
+        plant: $("#vehicle-plant").text(),
+        series: $("#vehicle-series").text()
+    };
+    console.log(fav);
+    $.post("/api/favorites", fav)
+        .then(function() {
+            console.log("Favourite Posted!");
+        });
+}
+
+favoritesMarker.click(function() {
+    console.log("Displaying Favorites On The Page");
+    faveVehiclesEl.empty();
+    $.get("/api/favorites", function(data, res) {
+        console.log(res);
+        for (var i = 0; i < data.length; i++) {
+
+            
+            html = `
+            <style>
+            table, th, td {
+            border: 1px solid black;
+            }
+            table {
+                font-family: 'Arial';
+                margin: 25px auto;
+                border-collapse: collapse;
+                border: 1px solid #eee;
+                border-bottom: 2px solid #00cccc;
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+                   0px 10px 20px rgba(0,0,0,0.05),
+                   0px 20px 20px rgba(0,0,0,0.05),
+                   0px 30px 20px rgba(0,0,0,0.05);
+                }
+            th, td {
+                color: #999;
+                border: 1px solid #eee;
+                padding: 12px 35px;
+                border-collapse: collapse;
+                }
+            th {
+                background: #00cccc;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 12px;
+                &.last {
+                border-right: none;
+                    }
+                }
+                   
+            </style>
+            <table>
+            <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Series</th>
+            <th>Plant</th>
+            </tr>
+            <tr>
+            <td>${data[i].make}</td>
+            <td>${data[i].model}</td>
+            <td>${data[i].year}</td>
+            <td>${data[i].series}</td>
+            <td>${data[i].plant}</td>
+            </tr>
+            </table>
+            `;
+
+            faveVehiclesEl.append(html);
+        }
+    });  
+});
+

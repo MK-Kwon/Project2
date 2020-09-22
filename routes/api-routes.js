@@ -48,6 +48,28 @@ module.exports = function (app) {
       });
     }
   });
+  // Routes that creates a new favorite vehicle in the database
+  app.post("/api/favorites/", function(req, res) {
+    console.log(" Look" + req.body);
+    db.Favorite.create({
+      category: req.body.category,
+      make: req.body.make,
+      model: req.body.model,
+      year: req.body.year,
+      series: req.body.series,
+      plant: req.body.plant
+    }).then(function(newFav) {
+      console.log(newFav);
+      res.json(newFav);
+    });
+  });
+
+  // Route that gets all favorite vehicles from database
+  app.get("/api/favorites", function(req, res) {
+    db.Favorite.findAll({}).then(function(newFav) {
+      res.json(newFav);
+    });
+  });
 
   app.get("/api/events/cars", function(req, res) {
     axios.get("https://maps.googleapis.com/maps/api/place/textsearch/json?query=motor+event+Adelaide&key=" + process.env.API_KEY).then(function(response) {
