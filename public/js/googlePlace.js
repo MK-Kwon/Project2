@@ -1,7 +1,12 @@
 const googleBtnEl = $("#googleBtn");
 const googleDivEl = $("#googleDiv");
 
+$("#eventMarker").click(function() {
+    googleDivEl.empty();
+});
+
 $(googleBtnEl).on("click", function () {
+
     googleDivEl.empty();
     console.log("Google Map");
 
