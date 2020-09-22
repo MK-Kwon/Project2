@@ -75,7 +75,6 @@ const vinchecker = function (vin) {
             </style>
             <table>
             <tr>
-            <th>Category</th>
             <th>Make</th>
             <th>Model</th>
             <th>Year</th>
@@ -83,7 +82,6 @@ const vinchecker = function (vin) {
             <th>Plant</th>
             </tr>
             <tr>
-            <td id="vehicle-category">Car</td>
             <td id="vehicle-make">${carSearch.make}</td>
             <td id="vehicle-model">${carSearch.model}</td>
             <td id="vehicle-year">${carSearch.year}</td>
@@ -143,7 +141,6 @@ const vinchecker = function (vin) {
             <table>
 
             <tr>
-            <th>Category</th>
             <th>Make</th>
             <th>Model</th>
             <th>Year</th>
@@ -152,7 +149,6 @@ const vinchecker = function (vin) {
             </tr>
 
             <tr>
-            <td id="vehicle-category">Motorbike</td>
             <td id="vehicle-make">${bikeSearch.make}</td>
             <td id="vehicle-model">${bikeSearch.model}</td>
             <td id="vehicle-year">${bikeSearch.year}</td>
