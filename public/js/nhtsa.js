@@ -16,7 +16,7 @@ $(document).ready(function() {
             if(response.Count == 0) {
 
                 $("#recallResults").text("Number Of Open Recalls: 0");
-                
+
             } else {
                 for(let i = 0; i < response.Results.length; i++) {
                     const recall = response.Results[i];
