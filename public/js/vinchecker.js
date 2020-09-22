@@ -18,11 +18,11 @@ $("#modal-right").click(function() {
 });
 
 favoritesBtn.click(function () {
-    postFavorites();
+    postFavorite();
 });
 
 const vinchecker = function (vin) {
-    const queryUrl = `https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${vin}?format=json`;
+    const queryUrl = `https://cors-ut-bootcamp.herokuapp.com/https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${vin}?format=json`;
     $.ajax({
         url: queryUrl,
         method: "GET"
@@ -37,8 +37,8 @@ const vinchecker = function (vin) {
                 make: response.Results[6].Value,
                 model: response.Results[8].Value,
                 year: response.Results[9].Value,
-                plant: response.Results[14].Value,
-                series: response.Results[11].Value
+                series: response.Results[11].Value,
+                plant: response.Results[14].Value
             };
             html = `
             <style>
@@ -75,6 +75,7 @@ const vinchecker = function (vin) {
             </style>
             <table>
             <tr>
+            <th>Category</th>
             <th>Make</th>
             <th>Model</th>
             <th>Year</th>
@@ -82,11 +83,12 @@ const vinchecker = function (vin) {
             <th>Plant</th>
             </tr>
             <tr>
-            <td>${carSearch.make}</td>
-            <td>${carSearch.model}</td>
-            <td>${carSearch.year}</td>
-            <td>${carSearch.series}</td>
-            <td>${carSearch.plant}</td>
+            <td id="vehicle-category">Car</td>
+            <td id="vehicle-make">${carSearch.make}</td>
+            <td id="vehicle-model">${carSearch.model}</td>
+            <td id="vehicle-year">${carSearch.year}</td>
+            <td id="vehicle-series">${carSearch.series}</td>
+            <td id="vehicle-plant">${carSearch.plant}</td>
             </tr>
             </table>
             `;
@@ -139,20 +141,25 @@ const vinchecker = function (vin) {
                    
             </style>
             <table>
+
             <tr>
+            <th>Category</th>
             <th>Make</th>
             <th>Model</th>
             <th>Year</th>
             <th>Series</th>
             <th>Plant</th>
             </tr>
+
             <tr>
-            <td>${bikeSearch.make}</td>
-            <td>${bikeSearch.model}</td>
-            <td>${bikeSearch.year}</td>
-            <td>${bikeSearch.series}</td>
-            <td>${bikeSearch.plant}</td>
+            <td id="vehicle-category">Motorbike</td>
+            <td id="vehicle-make">${bikeSearch.make}</td>
+            <td id="vehicle-model">${bikeSearch.model}</td>
+            <td id="vehicle-year">${bikeSearch.year}</td>
+            <td id="vehicle-series">${bikeSearch.series}</td>
+            <td id="vehicle-plant">${bikeSearch.plant}</td>
             </tr>
+
             </table>
             `;
             $("#vehicle-display").empty();
@@ -168,7 +175,7 @@ const vinchecker = function (vin) {
         });
 };
 
-function postFavorites() {
+function postFavorite() {
     const fav = {
         category: $("#vehicle-category").text(),
         make: $("#vehicle-make").text(),
@@ -179,8 +186,8 @@ function postFavorites() {
     };
     console.log(fav);
     $.post("/api/favorites", fav)
-        .then(function() {
-            console.log("Favourite Posted!");
+        .then(function () {
+            console.log("Favorite posted!");
         });
 }
 
