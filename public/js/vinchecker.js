@@ -41,12 +41,54 @@ const vinchecker = function (vin) {
                 series: response.Results[11].Value
             };
             html = `
-                <h3 class="vin-alert" id="vehicle-category">Car</h3>
-                <p class="vehicle-info" id="vehicle-make">${carSearch.make}</p>
-                <p class="vehicle-info" id="vehicle-model">${carSearch.model}</p>
-                <p class="vehicle-info" id="vehicle-year">${carSearch.year}</p>
-                <p class="vehicle-info" id="vehicle-plant">${carSearch.plant}</p>
-                <p class="vehicle-info" id="vehicle-series">${carSearch.series}</p>
+            <style>
+            table, th, td {
+            border: 1px solid black;
+            }
+            table {
+                font-family: 'Arial';
+                margin: 25px auto;
+                border-collapse: collapse;
+                border: 1px solid #eee;
+                border-bottom: 2px solid #00cccc;
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+                   0px 10px 20px rgba(0,0,0,0.05),
+                   0px 20px 20px rgba(0,0,0,0.05),
+                   0px 30px 20px rgba(0,0,0,0.05);
+                }
+            th, td {
+                color: #999;
+                border: 1px solid #eee;
+                padding: 12px 35px;
+                border-collapse: collapse;
+                }
+            th {
+                background: #00cccc;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 12px;
+                &.last {
+                border-right: none;
+                    }
+                }
+                   
+            </style>
+            <table>
+            <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Series</th>
+            <th>Plant</th>
+            </tr>
+            <tr>
+            <td>${carSearch.make}</td>
+            <td>${carSearch.model}</td>
+            <td>${carSearch.year}</td>
+            <td>${carSearch.series}</td>
+            <td>${carSearch.plant}</td>
+            </tr>
+            </table>
             `;
             $("#vehicle-display").empty();
             $("#vehicle-display").append(html);
@@ -64,12 +106,54 @@ const vinchecker = function (vin) {
                 series: response.Results[11].Value
             };
             html = `
-            <h3 class="vin-alert" id="vehicle-category">Motorbike</h3>
-            <p class="vehicle-info" id="vehicle-make">${bikeSearch.make}</p>
-            <p class="vehicle-info" id="vehicle-model">${bikeSearch.model}</p>
-            <p class="vehicle-info" id="vehicle-year">${bikeSearch.year}</p>
-            <p class="vehicle-info" id="vehicle-plant">${bikeSearch.plant}</p>
-            <p class="vehicle-info" id="vehicle-series">${bikeSearch.series}</p>
+            <style>
+            table, th, td {
+            border: 1px solid black;
+            }
+            table {
+                font-family: 'Arial';
+                margin: 25px auto;
+                border-collapse: collapse;
+                border: 1px solid #eee;
+                border-bottom: 2px solid #00cccc;
+                box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
+                   0px 10px 20px rgba(0,0,0,0.05),
+                   0px 20px 20px rgba(0,0,0,0.05),
+                   0px 30px 20px rgba(0,0,0,0.05);
+                }
+            th, td {
+                color: #999;
+                border: 1px solid #eee;
+                padding: 12px 35px;
+                border-collapse: collapse;
+                }
+            th {
+                background: #00cccc;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 12px;
+                &.last {
+                border-right: none;
+                    }
+                }
+                   
+            </style>
+            <table>
+            <tr>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Series</th>
+            <th>Plant</th>
+            </tr>
+            <tr>
+            <td>${bikeSearch.make}</td>
+            <td>${bikeSearch.model}</td>
+            <td>${bikeSearch.year}</td>
+            <td>${bikeSearch.series}</td>
+            <td>${bikeSearch.plant}</td>
+            </tr>
+            </table>
             `;
             $("#vehicle-display").empty();
             $("#vehicle-display").append(html);
