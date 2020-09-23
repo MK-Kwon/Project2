@@ -18,6 +18,17 @@
 
 ### ✨ [Demo](http://roadstar2020.herokuapp.com/)
 
+## Screenshots
+
+<img src="./public/img/Members Page.png" width="100%" height="auto">
+<img src="./public/img/login page screen shot.png" width="100%" height="auto">
+
+## GIF
+
+<img src="https://thumbs.gfycat.com/FrequentFastAphid-size_restricted.gif" width ="800">
+<img src="https://thumbs.gfycat.com/ThisDismalHermitcrab-size_restricted.gif" width ="800">
+
+
 ## Install
 
 ```sh
