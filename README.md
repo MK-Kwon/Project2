@@ -44,22 +44,8 @@ This application helps users to find motorcycle and car events around them as we
 
 ## Install
 
-```sh
-Requires Node.js and installation of these dependencies 
-.ajax 
-.axios 
-.bcrypt.js 
-.dotenv 
-.express 
-.express-session 
-.mysql2 
-.passport 
-.passport-local 
-.sequelize
+RoadStar requires no installation. Just sign up at http://roadstar2020.herokuapp.com/ and start using the app!
 
-devDependencies
-.eslint
-```
 ## Built With
 
 * [Google Places](https://developers.google.com/places/web-service/intro) - We used Google Places to find vehicle events.
@@ -67,19 +53,15 @@ devDependencies
 * [NHTSA](https://vpic.nhtsa.dot.gov/api/) - We used National Highway Traffic Safety Administration's API to information on vehicle recalls.
 * RoadStar Logo was created by Min Kyung Kwon.
 
-## Tools
+## Technologies
 
 * Node.js, Express.js for back-end development.
 * MySQL, Sequelize.
 * jQuery, Javascript.
 * MVC design.
 * ESLint to maintain good code practices.
-
-## Usage
-
-```sh
-node server.js to run the app locally with your own mySQL credentials
-```
+* Adobe Photoshop
+* QuickTime Player & gfycat
 
 ## 👤 Authors
 
