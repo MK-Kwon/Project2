@@ -18,7 +18,7 @@
 
 ### Deployed App: http://roadstar2020.herokuapp.com/
 
-## RoadStar
+# RoadStar
 This application helps users to find motorcycle and car events around them as well as keep track of their favourite vehicles and motorbikes. It also lets the users to search car/motorbike info by inputting the VIN and also any parts been recalled.
 
 <img src="Members Page.png" width="100%" height="auto">
