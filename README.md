@@ -18,16 +18,26 @@
 
 ### ✨ [Demo](http://roadstar2020.herokuapp.com/)
 
+## Deployed App: http://roadstar2020.herokuapp.com/
+
 ## Screenshots
 
 <img src="Members Page.png" width="100%" height="auto">
 <img src="login page screen shot.png" width="100%" height="auto">
 
-## GIF
+## Instructions
 
+1. Sign in for the first time use or Log in if you already have an account. The app works only for the members. Enter your e-mail and password.(Note. App doesn't require email verification)
 <img src="https://thumbs.gfycat.com/FrequentFastAphid-size_restricted.gif" width ="800">
+
+2. Hover over the markers(red circles with plus sing on) to check the descriptions and click to open modals with relevant contents.
 <img src="https://thumbs.gfycat.com/ThisDismalHermitcrab-size_restricted.gif" width ="800">
 
+3. VIN checker
+<img src="https://thumbs.gfycat.com/WildShockingCicada-size_restricted.gif" width ="800">
+
+4. Car Events nearby checker
+<img src="https://thumbs.gfycat.com/FrayedWaterloggedKakapo-size_restricted.gif" width ="800">
 
 ## Install
 
