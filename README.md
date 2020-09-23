@@ -20,8 +20,8 @@
 
 ## Screenshots
 
-<img src="./public/img/Members Page.png" width="100%" height="auto">
-<img src="./public/img/login page screen shot.png" width="100%" height="auto">
+<img src="Members Page.png" width="100%" height="auto">
+<img src="login page screen shot.png" width="100%" height="auto">
 
 ## GIF
 
