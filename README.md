@@ -81,9 +81,8 @@ devDependencies
 node server.js to run the app locally with your own mySQL credentials
 ```
 
-## Authors
+## 👤 Authors
 
-👤 
 * [Min Kyung Kwon](https://github.com/MK-Kwon)
 * [Thomas Nguyen](https://github.com/T-Nguyen700)
 * [Jessica Walker](https://github.com/jessica-walker1020)
