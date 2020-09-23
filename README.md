@@ -60,6 +60,20 @@ Requires Node.js and installation of these dependencies
 devDependencies
 .eslint
 ```
+## Built With
+
+* [Google Places](https://developers.google.com/places/web-service/intro) - We used Google Places to find vehicle events.
+* [UI Kit](https://getuikit.com/docs/introduction) - We used UIkit CSS framework for a fully responsive website and design. 
+* [NHTSA](https://vpic.nhtsa.dot.gov/api/) - We used National Highway Traffic Safety Administration's API to information on vehicle recalls.
+* RoadStar Logo was created by Min Kyung Kwon.
+
+## Tools
+
+* Node.js, Express.js for back-end development.
+* MySQL, Sequelize.
+* jQuery, Javascript.
+* MVC design.
+* ESLint to maintain good code practices.
 
 ## Usage
 
@@ -67,7 +81,7 @@ devDependencies
 node server.js to run the app locally with your own mySQL credentials
 ```
 
-## Author
+## Authors
 
 👤 **Min Kyung Kwon, Thomas Nguyen, Jessica Walker**
 
