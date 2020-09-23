@@ -18,12 +18,13 @@
 
 ### ✨ [Demo](http://roadstar2020.herokuapp.com/)
 
-## Deployed App: http://roadstar2020.herokuapp.com/
+### Deployed App: http://roadstar2020.herokuapp.com/
 
 ## Screenshots
 
 <img src="Members Page.png" width="100%" height="auto">
 <img src="login page screen shot.png" width="100%" height="auto">
+<img src="Recall Search Page Screen Shot.png" width="100%" height="auto">
 
 ## Instructions
 
@@ -34,7 +35,7 @@
 <img src="https://thumbs.gfycat.com/ThisDismalHermitcrab-size_restricted.gif" width ="800">
 
 3. VIN checker
-<img src="https://thumbs.gfycat.com/WildShockingCicada-size_restricted.gif" width ="800">
+<img src="https://thumbs.gfycat.com/VigorousFatCarp-size_restricted.gif" width ="800">
 
 4. Car Events nearby checker
 <img src="https://thumbs.gfycat.com/FrayedWaterloggedKakapo-size_restricted.gif" width ="800">
