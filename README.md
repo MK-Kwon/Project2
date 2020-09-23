@@ -19,7 +19,7 @@
 ### Deployed App: http://roadstar2020.herokuapp.com/
 
 # RoadStar
-This application helps users to find motorcycle and car events around them as well as keep track of their favourite vehicles and motorbikes. It also lets the users to search car/motorbike info by inputting the VIN and also any parts been recalled.
+This application helps users to find motorcycle and car events around them as well as keep track of their favourite vehicles. Users can also search car/motorbike info by inputting the VIN and find recalls for a specific vehicle.
 
 <img src="Members Page.png" width="100%" height="auto">
 <img src="login page screen shot.png" width="100%" height="auto">
@@ -30,7 +30,7 @@ This application helps users to find motorcycle and car events around them as we
 1. Sign in for the first time use or Log in if you already have an account. The app works only for the members. Enter your e-mail and password.(Note. App doesn't require email verification)
 <img src="https://thumbs.gfycat.com/FrequentFastAphid-size_restricted.gif" width ="800">
 
-2. Hover over the markers(red circles with plus sing on) to check the descriptions and click to open modals with relevant contents.
+2. Hover over the markers(red circles with plus sign on) to check the descriptions and click to open modals with relevant contents.
 <img src="https://thumbs.gfycat.com/ThisDismalHermitcrab-size_restricted.gif" width ="800">
 
 3. VIN checker to get info about the vehicle/motorcycle
