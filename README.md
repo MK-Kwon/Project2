@@ -83,10 +83,10 @@ node server.js to run the app locally with your own mySQL credentials
 
 ## Authors
 
-👤 **Min Kyung Kwon, Thomas Nguyen, Jessica Walker**
-
-* Github: [@MK-Kwon, @T-Nguyen700, @jessica-walker1020](https://github.com/MK-Kwon, https://github.com/T-Nguyen700, https://github.com/Jessica-Walker1020)
-* LinkedIn: [@www.linkedin.com\/in\/min-kyung-kwon](https://linkedin.com/in/www.linkedin.com\/in\/min-kyung-kwon)
+👤 
+* [Min Kyung Kwon](https://github.com/MK-Kwon)
+* [Thomas Nguyen](https://github.com/T-Nguyen700)
+* [Jessica Walker](https://github.com/jessica-walker1020)
 
 ## 🤝 Contributing
 
