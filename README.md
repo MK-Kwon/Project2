@@ -21,9 +21,9 @@
 # RoadStar
 This application helps users to find motorcycle and car events around them as well as keep track of their favourite vehicles. Users can also search car/motorbike info by inputting the VIN and find recalls for a specific vehicle.
 
-<img src="http://drive.google.com/uc?id=1LlS-uiMWkpioI4DYa_E7KAuU8vlhad8R" width ="80%" height="auto">
-<img src="http://drive.google.com/uc?id=1HJu9uZeIwbXlEjOFvDHhHK6E7_SGe6dm" width ="80%" height="auto">
-<img src="http://drive.google.com/uc?id=1uSc41tWsmYu7YskLsG-6bMiVe4yiSh6L" width ="80%" height="auto">
+<img src="http://drive.google.com/uc?id=1LlS-uiMWkpioI4DYa_E7KAuU8vlhad8R" width ="100%" height="auto">
+<img src="http://drive.google.com/uc?id=1HJu9uZeIwbXlEjOFvDHhHK6E7_SGe6dm" width ="100%" height="auto">
+<img src="http://drive.google.com/uc?id=1uSc41tWsmYu7YskLsG-6bMiVe4yiSh6L" width ="100%" height="auto">
 
 ## Instructions
 
