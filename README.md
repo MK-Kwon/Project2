@@ -48,7 +48,7 @@ RoadStar requires no installation. Just sign up at http://roadstar2020.herokuapp
 
 ## Prerequisites
 
-* Google Sign-In officially supports the following browsers and platforms:
+Google Sign-In officially supports the following browsers and platforms:
 
 - Google Chrome on macOS, Windows, Linux, Android, iOS
 - Mozilla Firefox on macOS, Windows, Linux
