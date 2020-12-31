@@ -46,6 +46,16 @@ This application helps users to find motorcycle and car events around them as we
 
 RoadStar requires no installation. Just sign up at http://roadstar2020.herokuapp.com/ and start using the app!
 
+## Prerequisites
+
+* Google Sign-In officially supports the following browsers and platforms:
+
+- Google Chrome on macOS, Windows, Linux, Android, iOS
+- Mozilla Firefox on macOS, Windows, Linux
+- Safari on macOS and iOS
+- Internet Explorer versions from 8 to 11 on Windows
+- Microsoft Edge on Windows
+
 ## Built With
 
 * [Google Places](https://developers.google.com/places/web-service/intro) - We used Google Places to find vehicle events.
